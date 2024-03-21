@@ -1,0 +1,31 @@
+.navbar {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .navbar a {
+    height: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  .navbar-dark {
+    background-color: black;
+  }
+  
+  .navbar-primary {
+    background-color: blue;
+  }
+  
+  .navbar-light {
+    background-color: white;
+    color: black;
+  }
+  
