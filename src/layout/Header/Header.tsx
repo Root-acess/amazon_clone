@@ -1,6 +1,7 @@
 import React from 'react';
-import amazonlogo from '../../components/imgs/Amazon_logo.png';
+import amazonlogo from '../../components/imgs/logo.png';
 import searchlogo from '../../components/imgs/search.png';
+import header_bottom_image from '../../components/imgs/header_image.jpg'
 import './header.scss';
 
 
@@ -9,7 +10,8 @@ const Header = () => {
   return (
     <>
       <div className="header">
-<img src="https://www.amazon.in/ref=nav_logo" alt="" />        <div className="header_search">
+        <img src={amazonlogo} alt="" />
+        <div className="header_search">
           <input type="text" />
           <img src={searchlogo} alt="" />
 
@@ -31,6 +33,24 @@ const Header = () => {
 
         </div>
       </div>
+      <div className="header_bottom">
+        <ul>
+          <li>All</li>
+          <li>Amazon miniTv</li>
+          <li>Sell</li>
+          <li>Best Seller</li>
+          <li>Mobiles</li>
+          <li>Today's Deals</li>
+          <li>CustomerService</li>
+          <li>Prime</li>
+          <li>Electronics</li>
+          <li>NewReleases</li><div className="header_bottom_img">
+        <img src={header_bottom_image} alt=""/>
+      </div>
+        </ul> 
+        
+      </div>
+     
     </>
   )
 }
