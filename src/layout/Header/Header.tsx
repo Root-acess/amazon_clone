@@ -2,7 +2,10 @@ import amazonlogo from '../../components/imgs/logo.png';
 import location from '../../components/imgs/location.png';
 import searchlogo from '../../components/imgs/search.png';
 import header_bottom_image from '../../components/imgs/header_image.jpg';
-import cart from '../../components/imgs/Cart.svg';
+import flag from '../../components/imgs/indian-flag.png';
+import cart from '../../components/imgs/cartlogo.png';
+import bar from '../../components/imgs/navbar.png'
+
 import './header.scss';
 import { Categories } from '../../Constants/Constants';
 
@@ -38,25 +41,38 @@ const Header = () => {
             <img src={searchlogo} alt="" />
           </div>
         </div>
+
+        <div className="nav-language">
+          <div className="lang-select border">
+            <img src={flag} alt="" />
+            <select className='lanuage-select'>
+              <option value="">EN </option>
+              <option value="">HINDI </option>
+              <option value="">ODIA </option>
+              <option value="">MARATHI </option>
+            </select>
+          </div>
+        </div>
+        <div className="header_options">
+          <p className="first">Hello,Signin</p>
+          <p className="second">Account & List</p>
+        </div>
+        <div className="header_options">
+          <p className="first">Return</p>
+          <p className="second"> & Order</p>
+        </div>
+        <div className="header_cart">
+         <img src={cart} alt=""  className='cartlogo'/>
+          <p className="cart-second"> Cart</p>
+        </div>
       </div>
 
-      <div className="header_nav">
-        <div className="header_options">
-          <span className="header_option1">Hello user</span>
-          <span className="header_option1">Sign In</span>
-        </div>
-        <div className="header_options">
-          <span className="header_option1">Return</span>
-          <span className="header_option1">&Order</span>
-        </div>
-        <div className="header_options">
-          <span className="header_option1">Your</span>
-          <span className="header_option1">prime</span>
-        </div>
-      </div>
+
+  
 
       <div className="header_bottom">
         <ul>
+        <img src={bar} alt="" className='bar_all'/>
           <li>All</li>
           <li>Amazon miniTv</li>
           <li>Sell</li>
@@ -64,12 +80,15 @@ const Header = () => {
           <li>Mobiles</li>
           <li>Today's Deals</li>
           <li>CustomerService</li>
-          <li>Prime</li>
+          <li>Prime   <span>▼</span></li>
           <li>Electronics</li>
+          <li>New Release</li>
+          <li>Home & kitchen</li>
+          <li>Gift Idea</li>
+          <li>Amazon pay</li>
+          <li>Fashion</li>
+          <li>Computer </li>
         </ul>
-        <div className="header_bottom_img">
-          <img src={header_bottom_image} alt="" />
-        </div>
       </div>
     </div>
   );

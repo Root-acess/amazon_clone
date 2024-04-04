@@ -12,8 +12,9 @@ body {
   display: flex;
   color: #fff;
   height: 60px;
-  background-color: #131921;
+  background-color: #0F1111;
   align-items: center;
+  justify-content: space-evenly;
 }
 .logo {
   margin-left: 8px;
@@ -130,4 +131,76 @@ body {
 .header_option1 {
   color: #fff;
   margin-right: 5px;
+}
+/*******************************/
+.nav-language{
+  width: auto;
+}
+.lanuage-select{
+align-items: center;
+background: transparent;
+border: 0;
+color: #fff;
+width: 42px;
+text-align: center;
+font-weight: 660;
+font-size: 1.2vw;
+}
+.lang-select img{
+  width: 20px;
+}
+.header_nav{
+  padding: 0 9px;
+}
+.header_options{
+  color: #fff;
+
+}
+.first{
+  font-size: 0.9vw;
+}
+.second{
+  font-size: 1vw;
+  font-weight: 700;
+
+}
+.nav_cart {
+  display: flex;
+  align-items: center;
+}
+
+.cartlogo {
+  height: 26px;
+  margin-right: 5px; 
+}
+
+.cart-second {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.header_cart {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px; 
+  border-radius: 5px; 
+  margin-left: -10px; 
+}
+.bar_all{
+  margin-top: -2px;
+  height: 18px;
+}
+.header_bottom ul{
+  background-color: #232f3e;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+   padding: 0; 
+}
+.header_bottom li{
+  margin-right: 10px;
 }
